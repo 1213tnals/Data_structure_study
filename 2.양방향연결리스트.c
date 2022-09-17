@@ -17,7 +17,7 @@ void insert(int data) {
 	node->data = data;
 	Node* cur;
 	cur = head->next;
-	while (cur->data < data && cur != tail) {  //오름차순으로 저장하기 위해서
+	while (cur->data < data && cur != tail) {  //오름차순으로 저장하기 위해서 현재 데이터가 더 크면 현재 노드를 뒤로
 		cur = cur->next;
 	}
 	Node* prev = cur->prev;
